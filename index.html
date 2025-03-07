@@ -4,208 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="style.css"/>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js" defer></script>
     <title>My Portfolio</title>
 </head>
 <body>
     <div class="container">
-        <header data-aos="fade-down" data-aos-duration="2000">
-            <h2><a href="#about">NΔNDΛ</a></h2>
+        <!-- Header -->
+        <header>
+            <h2>
+                <a href="#about">NΔNDΛ</a>
+            </h2>
 
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <!-- <li><a href="#experience">Experience</a> -->
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </header>
 
-        <section id="about">
-            <div class="intro">
-                <h2 class="title" data-aos="fade-right" data-aos-duration="1500">Hey world, I&apos;m Nanda</h2>
-                <div class="logo"  data-aos="fade-left" data-aos-duration="3000">
-                    <img src="./images/profile.png" alt="profile">
-                </div>
-                <p data-aos="fade-up" data-aos-duration="2000">A recent Karimganj College, (Assam University) graduate who's incredibly excited about software development and web designing with a background in computer science and application. I&apos;m well equipped with a technical skillset and an eagerness to experiment!</p>
-                <p data-aos="fade-up" data-aos-duration="2000">Outside of career pursuing and academics, I enjoy researching about Cyber security related stuff, watching anime and reading books :)</p>
-                
-                <div class="social-links" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-                    <a href="https://www.reddit.com/user/SmoothRecover9552/" target="_blank">
-                        <i class="fa-brands fa-reddit"></i>
-                    </a>
-                    <a href="https://stackoverflow.com/users/19021916/godlike" target="_blank">
-                        <i class="fa-brands fa-stack-overflow"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/nanda-gopal-das-60b806349/" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/hrik-das" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </div>
+        <!-- About -->
+        <section id="about" class="about-container">
+            <h2 class="title">Hey world, I&apos;m Nanda</h2>
+
+            <div class="profile">
+                <picture>
+                    <img src="images/profile.png" alt="profile">
+                    <source srcset="images/webp/profile.webp" type="image/webp">
+                </picture>
+            </div>
+
+            <div class="about-content">
+                <p>A recent Karimganj College, (Assam University) graduate who's incredibly excited about software development and web designing with a background in computer science and application. I&apos;m well equipped with a technical skillset and an eagerness to experiment!</p>
+                <p>Outside of career pursuing and academics, I enjoy researching about Cyber security related stuff, watching anime and reading books :)</p>
+            </div>
+
+            <div class="social-links" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+                <a href="https://www.reddit.com/user/SmoothRecover9552/" target="_blank">
+                    <i class="fa-brands fa-reddit"></i>
+                </a>
+                <a href="https://stackoverflow.com/users/19021916/godlike" target="_blank">
+                    <i class="fa-brands fa-stack-overflow"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/nanda-gopal-das-60b806349/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/hrik-das" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </div>
         </section>
 
-        <!-- <section id="experience"></section> -->
-
-        <section id="skills">
+        <!-- Skills -->
+        <section id="skills" class="skills-container">
             <h2 class="title">My Skills</h2>
-
-            <div class="wrapper">
-                <div class="item item1">
-                    <img src="./images/1.png" alt="">
-                </div>
-                <div class="item item2">
-                    <img src="./images/2.png" alt="">
-                </div>
-                <div class="item item3">
-                    <img src="./images/3.png" alt="">
-                </div>
-                <div class="item item4">
-                    <img src="./images/4.png" alt="">
-                </div>
-                <div class="item item5">
-                    <img src="./images/5.png" alt="">
-                </div>
-                <div class="item item6">
-                    <img src="./images/6.png" alt="">
-                </div>
-                <div class="item item7">
-                    <img src="./images/7.png" alt="">
-                </div>
-                <div class="item item8">
-                    <img src="./images/8.png" alt="">
-                </div>
-                <div class="item item9">
-                    <img src="./images/9.png" alt="">
-                </div>
-                <div class="item item10">
-                    <img src="./images/10.png" alt="">
-                </div>
-            </div>
-
-            <div class="info">
-                <div class="icon" data-aos="fade-right" data-aos-duration="2000">
-                    <img src="./images/grid2.png" alt="all" class="grid">
-                </div>
-
-                <p data-aos="fade-left" data-aos-duration="2000">Focusing on front-end development using frameworks and various libraries, components and trying to scale-up rich user interactive web designs. Animation will make the UI/UX to the next level for any upcoming future websites.</p>
-            </div>
         </section>
-
-        <section id="projects">
-            <h2 class="title" data-aos="fade-right" data-aos-duration="1000">My projects</h2>
-            
-            <div class="projects">
-                <div class="project" data-aos="flip-left" data-aos-duration="3000">
-                    <div class="card">
-                        <img src="./images/project1.png" alt="">
-                    </div>
-                    <h2>Portfolio Template</h2>
-                    <h4><em>HTML, CSS, AOS Library</em></h4>
-                    <p>This is a Simple and Responsive Portfolio Teamplate Design. Enhancing the modern portfolio template and user interactive and more future realistic.</p>
-                    <a href="https://github.com/hrik-das/portfolio-template" target="_blank">
-                        <i class="fa-solid fa-up-right-from-square"></i>
-                        Learn more
-                    </a>
-                </div>
-
-                <div class="project" data-aos="flip-right" data-aos-duration="3000">
-                    <div class="card">
-                        <img src="./images/project2.png" alt="">
-                    </div>
-                    <h2>Pokedex</h2>
-                    <h4><em>HTML, CSS, Javascript, Web Speech API</em></h4>
-                    <p>This is a Pokedex based on the animae series Pokemon. In this app we can actually search about any pokemon just like it was in the anime series.</p>
-                    <a href="https://github.com/hrik-das/pokedex" target="_blank">
-                        <i class="fa-solid fa-up-right-from-square"></i>
-                        Learn more
-                    </a>
-                </div>
-
-                <div class="project" data-aos="flip-left" data-aos-duration="3000">
-                    <div class="card">
-                        <img src="./images/project3.png" alt="">
-                    </div>
-                    <h2>Weather Application</h2>
-                    <h4><em>HTML, CSS, Javascript, Weather API</em></h4>
-                    <p>A weather forcasting application where most of the country weathers are visible on a real-time basis. Humidity, Wind Speed are updated on the app</p>
-                    <a href="https://github.com/hrik-das/weather-app" target="_blank">
-                        <i class="fa-solid fa-up-right-from-square"></i>
-                        Learn more
-                    </a>
-                </div>
-
-                <div class="project" data-aos="flip-right" data-aos-duration="3000">
-                    <div class="card">
-                        <img src="./images/project4.png" alt="">
-                    </div>
-                    <h2>Text to Speech Converter</h2>
-                    <h4><em>HTML, CSS, Javascript, Web Speech API</em></h4>
-                    <p>This is a Simple and interactive and unique app where we can convert various text into speech. A modern way of giving the websited to a modern feature.</p>
-                    <a href="https://github.com/hrik-das/text-to-speech" target="_blank">
-                        <i class="fa-solid fa-up-right-from-square"></i>
-                        Learn more
-                    </a>
-                </div>
-
-                <div class="project" data-aos="flip-left" data-aos-duration="3000">
-                    <div class="card">
-                        <img src="./images/project5.png" alt="">
-                    </div>
-                    <h2>Animation carousel</h2>
-                    <h4><em>HTML, CSS, Javascript</em></h4>
-                    <p>This is a Simple and Responsive Animated Carousel Design. Each images are updating with a modern look of carousel on the screen with a smooth animation.</p>
-                    <a href="https://github.com/hrik-das/animal-carousel" target="_blank">
-                        <i class="fa-solid fa-up-right-from-square"></i>
-                        Learn more
-                    </a>
-                </div>
-
-                <div class="project" data-aos="flip-right" data-aos-duration="3000">
-                    <div class="card">
-                        <img src="./images/project6.png" alt="">
-                    </div>
-                    <h2>My Portfolio Website</h2>
-                    <h4><em>HTML, CSS, Javascript, AOS Library</em></h4>
-                    <p>The very first website your looking into, It's a portfolio website. My skillset, projects and introduction and ideas having a way to look into the modern world.</p>
-                    <a href="" target="_blank">
-                        <i class="fa-solid fa-up-right-from-square"></i>
-                        Learn more
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-            <h2 class="title">Connect with me</h2>
-
-            <form action="" class="contact-form" data-aos="zoom-out-right" data-aos-duration="3000">
-                <h3>Leave a Message</h3>
-                <input type="text" name="" id="" placeholder="Your Name" required>
-                <input type="email" name="" id="" placeholder="Email Address" required>
-                <input type="text" name="" id="" placeholder="Enter Subject" required>
-                <textarea name="" id="" rows="5" placeholder="Your Concern"></textarea>
-                <button type="button">
-                    <i class="fa fa-paper-plane"></i>    
-                    Send Message
-                </button>
-            </form>
-
-            <div class="dev" data-aos="zoom-out-left" data-aos-duration="3000">
-                <img src="./images/grid1.png" alt="">
-            </div>
-        </section>
-
-        <footer>
-            <p>&copy; Godlike Creation, 2025. All Rights Reserved.</p>
-        </footer>
     </div>
 </body>
 </html>
