@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js" defer></script>
     <title>My Portfolio</title>
 </head>
 <body>
     <div class="container">
         <!-- Header -->
-        <header>
+        <header data-aos="fade-down" data-aos-duration="2000">
             <h2>
                 <a href="#about">NΔNDΛ</a>
             </h2>
@@ -32,16 +34,16 @@
 
         <!-- About -->
         <section id="about" class="about-container">
-            <h2 class="title">Hey world, I&apos;m Nanda</h2>
+            <h2 class="title" data-aos="fade-right" data-aos-duration="1500">Hey world, I&apos;m Nanda</h2>
 
-            <div class="profile">
+            <div class="profile" data-aos="fade-left" data-aos-duration="3000">
                 <picture>
                     <img src="images/profile.png" alt="profile">
                     <source srcset="images/webp/profile.webp" type="image/webp">
                 </picture>
             </div>
 
-            <div class="about-content">
+            <div class="about-content" data-aos="fade-up" data-aos-duration="1500">
                 <p>A recent Karimganj College, (Assam University) graduate who's incredibly excited about software development and web designing with a background in computer science and application. I&apos;m well equipped with a technical skillset and an eagerness to experiment!</p>
                 <p>Outside of career pursuing and academics, I enjoy researching about Cyber security related stuff, watching anime and reading books :)</p>
             </div>
@@ -64,7 +66,7 @@
 
         <!-- Skills -->
         <section id="skills" class="skills-container">
-            <h2 class="title">My Skills</h2>
+            <h2 class="title" data-aos="fade-up" data-aos-duration="1000">My Skills</h2>
 
             <div class="wrapper">
                 <div class="item item1" data-index="1">
@@ -130,14 +132,14 @@
             </div>
 
             <div class="skills-content">
-                <div class="image">
+                <div class="image" data-aos="fade-right" data-aos-duration="2000">
                     <picture>
                         <source srcset="images/webp/grid2.webp" type="image/webp">
                         <img src="images/grid2.png" alt="grid">
                     </picture>
                 </div>
 
-                <div class="text">
+                <div class="text" data-aos="fade-left" data-aos-duration="2000">
                     <p>Focusing on front-end development using frameworks and various libraries, components and trying to scale-up rich user interactive web designs. Animation will make the UI/UX to the next level for any upcoming future websites.</p>
                     <p>I&apos;m a really passionate developer, currently working for fullstack development. and kinda excited to leverage my background in computer science and passion for cybersecurity.</p>
                 </div>
@@ -146,10 +148,10 @@
 
         <!-- Projects -->
         <section id="projects" class="projects-container">
-            <h2 class="title">My Projects</h2>
+            <h2 class="title" data-aos="fade-up" data-aos-duration="1000">My Projects</h2>
 
             <div class="projects">
-                <div class="project">
+                <div class="project" data-aos="flip-left" data-aos-duration="2000">
                     <div class="project-image">
                         <picture>
                             <source srcset="images/webp/project1.webp" type="image/webp">
@@ -165,7 +167,7 @@
                         Learn more
                     </a>
                 </div>
-                <div class="project">
+                <div class="project" data-aos="flip-right" data-aos-duration="3000">
                     <div class="project-image">
                         <picture>
                             <source srcset="images/webp/project2.webp" type="image/webp">
@@ -181,7 +183,7 @@
                         Learn more
                     </a>
                 </div>
-                <div class="project">
+                <div class="project" data-aos="flip-left" data-aos-duration="2000">
                     <div class="project-image">
                         <picture>
                             <source srcset="images/webp/project3.webp" type="image/webp">
@@ -197,7 +199,7 @@
                         Learn more
                     </a>
                 </div>
-                <div class="project">
+                <div class="project" data-aos="flip-right" data-aos-duration="2000">
                     <div class="project-image">
                         <picture>
                             <source srcset="images/webp/project4.webp" type="image/webp">
@@ -213,7 +215,7 @@
                         Learn more
                     </a>
                 </div>
-                <div class="project">
+                <div class="project" data-aos="flip-left" data-aos-duration="3000">
                     <div class="project-image">
                         <picture>
                             <source srcset="images/webp/project5.webp" type="image/webp">
@@ -229,7 +231,7 @@
                         Learn more
                     </a>
                 </div>
-                <div class="project">
+                <div class="project" data-aos="flip-right" data-aos-duration="2000">
                     <div class="project-image">
                         <picture>
                             <source srcset="images/webp/project6.webp" type="image/webp">
@@ -250,10 +252,10 @@
 
         <!-- Contact -->
         <section id="contact" class="contact-container">
-            <h2 class="title">Connect with me</h2>
+            <h2 class="title" data-aos="fade-right" data-aos-duration="2000">Connect with me</h2>
 
             <div class="contact-content">
-                <form action="" class="contact-form">
+                <form action="" class="contact-form" data-aos="zoom-out-right" data-aos-duration="2000">
                     <h3>Leave a Message</h3>
                     <input type="text" name="" id="" placeholder="Your Name" required>
                     <input type="email" name="" id="" placeholder="Email Address" required>
@@ -265,7 +267,7 @@
                     </button>
                 </form>
     
-                <div class="contact-image">
+                <div class="contact-image" data-aos="zoom-out-left" data-aos-duration="2000">
                     <img src="./images/grid1.png" alt="grid-one">
                 </div>
             </div>
