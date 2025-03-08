@@ -630,14 +630,15 @@ footer {
     }
 
     .container .skills-container .wrapper {
-        width: 80%;
+        width: 90%;
         margin-top: 1rem;
+        
+        .item {
+            width: 80px;
+            height: 80px;
+        }
     }
 
-    .item {
-        width: 100px;
-        height: 60px;
-    }
 
     .container .skills-container .skills-content {
         margin-top: 2rem;
@@ -698,6 +699,10 @@ footer {
             cursor: pointer;
             transition: all 0.5s;
         }
+    }
+
+    .container .contact-container {
+        margin-top: 5rem;
     }
 
     .container .contact-container .contact-content .contact-form {
