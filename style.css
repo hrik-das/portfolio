@@ -291,6 +291,7 @@ html, body {
 }
 
 .container .projects-container .projects .project {
+    position: relative;
     padding: 1.2rem;
     border-radius: 10px;
     border: 2px solid #333333;
@@ -317,10 +318,12 @@ html, body {
         font-size: 0.8rem;
         font-weight: 500;
         letter-spacing: 0.05rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2.2rem;
     }
 
     a {
+        position: absolute;
+        bottom: 3%;
         padding: 0.3rem 0.6rem;
         outline: none;
         border: 2px solid #ffffff51;
@@ -687,7 +690,7 @@ footer {
             font-size: 0.75rem;
             font-weight: 500;
             letter-spacing: 0.03rem;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
         }
     
         a {
@@ -713,6 +716,10 @@ footer {
         h3 {
             font-size: 1.2rem;
             font-weight: 500;
+        }
+
+        input {
+            font-size: 14px;
         }
     }
 
